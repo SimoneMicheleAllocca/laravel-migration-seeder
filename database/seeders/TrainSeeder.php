@@ -15,7 +15,7 @@ class TrainSeeder extends Seeder
       
      public function run()
      {
-         $faker = Faker::create();
+         $faker = Faker::create('it_IT');
          
          for ($i = 0; $i < 50; $i++) {
             DB::table('trains')->insert([
